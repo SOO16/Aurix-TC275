@@ -1,0 +1,444 @@
+Build started...
+15:46:24 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
+cctc -cs --dep-file="Cpu1_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu1_Main.src" "../Cpu1_Main.c"
+cctc -cs --dep-file="Cpu2_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu2_Main.src" "../Cpu2_Main.c"
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu1_Main.o" "Cpu1_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu2_Main.o" "Cpu2_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x20e3 (8419) = code: 0x1f3e (7998) + romdata: 0x1a5 (421)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:04:50 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x20e3 (8419) = code: 0x1f3e (7998) + romdata: 0x1a5 (421)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:07:43 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x20e3 (8419) = code: 0x1f3e (7998) + romdata: 0x1a5 (421)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:11:58 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+ctc W505: ["../Cpu0_Main.c" 47/5] implicit declaration of function "initPort"
+ctc W577: ["../Cpu0_Main.c" 47/13] calling a function without a prototype
+ctc W505: ["../Cpu0_Main.c" 51/9] implicit declaration of function "IOPort_test"
+ctc W577: ["../Cpu0_Main.c" 51/20] calling a function without a prototype
+0 errors, 4 warnings
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x2741 (10049) = code: 0x2594 (9620) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+16:12:06 **** Clean-only build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 clean 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+rm -rf ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.src ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.d ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.o ./Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.src ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.d ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.o ./Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.d ./Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.o ./Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.d ./Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.o ./Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.d ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.o ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.src ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.d ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.o ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.src ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.d ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.o ./Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.d ./Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.o ./Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.d ./Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.o ./Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.src ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.src ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.src ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.src ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.src ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.src ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.d ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.o ./Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.d ./Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.o ./Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.d ./Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.o ./Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.src
+rm -rf ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.d ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.o ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.src ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.d ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.o ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.src ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.d ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.o ./Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.src
+rm -rf ./Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.d ./Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.o ./Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src ./Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.d ./Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.o ./Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src
+rm -rf ./Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.d ./Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.o ./Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.src ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.d ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.o ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.src ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.d ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.o ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.src ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.d ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.o ./Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.src ./Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.d ./Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.o ./Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.src
+rm -rf ./Configurations/Debug/sync_on_halt.d ./Configurations/Debug/sync_on_halt.o ./Configurations/Debug/sync_on_halt.src
+rm -rf ./Cpu0_Main.d ./Cpu0_Main.o ./Cpu0_Main.src ./Cpu1_Main.d ./Cpu1_Main.o ./Cpu1_Main.src ./Cpu2_Main.d ./Cpu2_Main.o ./Cpu2_Main.src ./ioport.d ./ioport.o ./ioport.src
+rm -rf IO_Port_Test1.siz IO_Port_Test1.elf
+ 
+Build started...
+16:12:10 **** Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxAsclin_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCcu6_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxCif_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxDsadc_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEray_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxEth_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGpt12_PinMap.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxI2c_PinMap.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMsc_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPort_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxMultican_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxPsi5s_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxScu_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxQspi_PinMap.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.src" "../Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSent_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxGtm_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxAsclin_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCif_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCcu6_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxSmu_PinMap.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxCpu_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxDma_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxEmem_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.o" "Libraries/iLLD/TC27D/Tricore/_PinMap/IfxVadc_PinMap.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxEray_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxFlash_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxHssl_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxI2c_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMsc_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxPsi5_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMultican_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxPort_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxGtm_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxQspi_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxScu_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSent_cfg.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSmu_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxMtu_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.src" "../Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.src" "../Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.src" "../Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxSrc_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.src" "../Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.src" "../Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.src" "../Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxStm_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.src" "../Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.o" "Libraries/iLLD/TC27D/Tricore/_Impl/IfxVadc_cfg.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.src" "../Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.o" "Libraries/iLLD/TC27D/Tricore/Src/Std/IfxSrc.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.o" "Libraries/iLLD/TC27D/Tricore/Port/Std/IfxPort.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.o" "Libraries/iLLD/TC27D/Tricore/Stm/Std/IfxStm.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.o" "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuEru.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.o" "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuWdt.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.o" "Libraries/iLLD/TC27D/Tricore/Scu/Std/IfxScuCcu.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.o" "Libraries/iLLD/TC27D/Tricore/Mtu/Std/IfxMtu.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.src" "../Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.src" "../Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Atom.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.src" "../Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.src" "../Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Dpll.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Cmu.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tbu.src"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.src" "../Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.c"
+cctc -cs --dep-file="Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.src" "../Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tim.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.o" "Libraries/iLLD/TC27D/Tricore/Cpu/Trap/IfxCpu_Trap.src"
+cctc -cs --dep-file="Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src" "../Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.o" "Libraries/iLLD/TC27D/Tricore/Gtm/Std/IfxGtm_Tom.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.o" "Libraries/iLLD/TC27D/Tricore/Cpu/Std/IfxCpu.src"
+cctc -cs --dep-file="Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src" "../Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.o" "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart0.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.o" "Libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src"
+cctc -cs --dep-file="Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.src" "../Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.c"
+cctc -cs --dep-file="Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.src" "../Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.c"
+cctc -cs --dep-file="Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.src" "../Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.c"
+cctc -cs --dep-file="Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.src" "../Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.c"
+cctc -cs --dep-file="Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.src" "../Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.o" "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart1.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.o" "Libraries/Infra/Platform/Tricore/Compilers/CompilerDcc.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.o" "Libraries/iLLD/TC27D/Tricore/Cpu/CStart/IfxCpu_CStart2.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.o" "Libraries/Infra/Platform/Tricore/Compilers/CompilerGcc.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.o" "Libraries/Infra/Platform/Tricore/Compilers/CompilerGhs.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.o" "Libraries/Infra/Platform/Tricore/Compilers/CompilerGnuc.src"
+cctc -cs --dep-file="Configurations/Debug/sync_on_halt.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Configurations/Debug/sync_on_halt.src" "../Configurations/Debug/sync_on_halt.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.o" "Libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.src"
+cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
+cctc -cs --dep-file="Cpu1_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu1_Main.src" "../Cpu1_Main.c"
+cctc -cs --dep-file="Cpu2_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu2_Main.src" "../Cpu2_Main.c"
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.o" "Libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src"
+ctc W505: ["../Cpu0_Main.c" 47/5] implicit declaration of function "initPort"
+ctc W577: ["../Cpu0_Main.c" 47/13] calling a function without a prototype
+ctc W505: ["../Cpu0_Main.c" 51/9] implicit declaration of function "IOPort_test"
+ctc W577: ["../Cpu0_Main.c" 51/20] calling a function without a prototype
+0 errors, 4 warnings
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu1_Main.o" "Cpu1_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu2_Main.o" "Cpu2_Main.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Configurations/Debug/sync_on_halt.o" "Configurations/Debug/sync_on_halt.src"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x2741 (10049) = code: 0x2594 (9620) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:14:20 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x2745 (10053) = code: 0x2598 (9624) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:15:07 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26f3 (9971) = code: 0x2546 (9542) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:16:17 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="Cpu0_Main.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "Cpu0_Main.src" "../Cpu0_Main.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "Cpu0_Main.o" "Cpu0_Main.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26f3 (9971) = code: 0x2546 (9542) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:16:57 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26f3 (9971) = code: 0x2546 (9542) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:20:55 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26f3 (9971) = code: 0x2546 (9542) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:24:02 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26db (9947) = code: 0x252e (9518) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:24:27 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26db (9947) = code: 0x252e (9518) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:24:29 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x26db (9947) = code: 0x252e (9518) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:37:38 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x2723 (10019) = code: 0x2576 (9590) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+Build started...
+16:37:46 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x2723 (10019) = code: 0x2576 (9590) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
