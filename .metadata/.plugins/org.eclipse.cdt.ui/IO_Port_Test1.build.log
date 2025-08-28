@@ -1,0 +1,20 @@
+16:37:46 **** Incremental Build of configuration TriCore Debug (TASKING) for project IO_Port_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+cctc -cs --dep-file="ioport.d" --misrac-version=2004 -D__CPU__=tc27xd "-fD:/Project/Aurix-TC275/IO_Port_Test1/TriCore Debug (TASKING)/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc27xd -Y0 -N0 -Z0 -o "ioport.src" "../ioport.c"
+astc -Og -Os --no-warnings= --error-limit=42 -o  "ioport.o" "ioport.src"
+Building target: IO_Port_Test1.elf
+Invoking: TASKING Linker
+cctc -f .IO_Port_Test1.elf.opt
+Finished building target: IO_Port_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "IO_Port_Test1.elf"
+Total sizes:
+ROM: 0x2723 (10019) = code: 0x2576 (9590) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: IO_Port_Test1.siz
+ 
+
+16:37:47 Build Finished. 0 errors, 0 warnings. (took 768ms)
+

@@ -1,0 +1,18 @@
+16:22:51 **** Incremental Build of configuration TriCore Debug (TASKING) for project UART_Test1 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: UART_Test1.elf
+Invoking: TASKING Linker
+cctc -f .UART_Test1.elf.opt
+Finished building target: UART_Test1.elf
+ 
+Invoking: Print Size
+elfsize  "UART_Test1.elf"
+Total sizes:
+ROM: 0x3d6a (15722) = code: 0x3a58 (14936) + romdata: 0x312 (786)
+RAM: 0x9746 (38726) = data + bss
+Finished building: UART_Test1.siz
+ 
+
+16:22:51 Build Finished. 0 errors, 0 warnings. (took 660ms)
+
