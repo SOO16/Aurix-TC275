@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Timer_Test1 TriCore Debug (TASKING)
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:IO_Port_Test1\ TriCore\ Debug\ (TASKING)/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:IO_Port_Test1\ TriCore\ Debug\ (TASKING)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
@@ -12,5 +12,7 @@ org.eclipse.launchbar.core.descriptorType.default\:TC275-LED\ TriCore\ Debug\ (T
 org.eclipse.launchbar.core.descriptorType.default\:TC275-LED\ TriCore\ Debug\ (TASKING)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:TC275-LED-Button\ TriCore\ Debug\ (TASKING)/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:TC275-LED-Button\ TriCore\ Debug\ (TASKING)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Timer_Test1\ TriCore\ Debug\ (TASKING)/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Timer_Test1\ TriCore\ Debug\ (TASKING)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:UART_Test1\ TriCore\ Debug\ (TASKING)/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:UART_Test1\ TriCore\ Debug\ (TASKING)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
