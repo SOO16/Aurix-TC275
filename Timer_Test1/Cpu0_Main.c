@@ -27,7 +27,7 @@
 #include "Ifx_Types.h"
 #include "IfxCpu.h"
 #include "IfxScuWdt.h"
-
+#include "GPT12_Timer_Interrupt.h"
 IfxCpu_syncEvent cpuSyncEvent = 0;
 
 void core0_main(void)
@@ -43,6 +43,8 @@ void core0_main(void)
     /* Wait for CPU sync event */
     IfxCpu_emitEvent(&cpuSyncEvent);
     IfxCpu_waitEvent(&cpuSyncEvent, 1);
+
+    initGpt12Timer();
         
     while(1)
     {

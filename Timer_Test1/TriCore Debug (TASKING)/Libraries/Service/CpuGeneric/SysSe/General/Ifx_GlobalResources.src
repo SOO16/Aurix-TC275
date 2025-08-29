@@ -1,0 +1,659 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc20740a --dep-file=Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc27xd -D__CPU_TC27XD__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc27xd -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1 -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Configurations -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra\\\\Platform -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra\\\\Sfr -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Infra\\\\Sfr\\\\TC27D\\\\_Reg -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\If -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Comm -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\General -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Time -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Asc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Lin -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Spi -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Asclin\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6 -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\Icu -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\PwmBc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\PwmHl -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\TPwm -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\Timer -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Ccu6\\\\TimerWithTrigger -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cif -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cif\\\\Cam -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cif\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\CStart -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Irq -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Cpu\\\\Trap -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dma -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dma\\\\Dma -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dma\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dsadc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dsadc\\\\Dsadc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dsadc\\\\Rdc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dsadc\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dts -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dts\\\\Dts -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Dts\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Emem -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Emem\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Eray -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Eray\\\\Eray -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Eray\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Eth -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Eth\\\\Phy_Pef7071 -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Eth\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Fce -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Fce\\\\Crc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Fce\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Flash -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Flash\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gpt12 -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gpt12\\\\IncrEnc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gpt12\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Atom -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Atom\\\\PwmHl -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Atom\\\\Timer -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tim -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tim\\\\In -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Pwm -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\PwmHl -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Tom\\\\Timer -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Gtm\\\\Trig -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Hssl -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Hssl\\\\Hssl -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Hssl\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\I2c -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\I2c\\\\I2c -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\I2c\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Iom -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Iom\\\\Driver -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Iom\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Msc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Msc\\\\Msc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Msc\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Mtu\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Multican -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Multican\\\\Can -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Multican\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Io -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Port\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Psi5 -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Psi5\\\\Psi5 -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Psi5\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Psi5s -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Psi5s\\\\Psi5s -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Psi5s\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Qspi -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Qspi\\\\SpiMaster -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Qspi\\\\SpiSlave -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Qspi\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Scu\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Sent -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Sent\\\\Sent -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Sent\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Smu -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Smu\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Src\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Stm\\\\Timer -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Adc -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\Vadc\\\\Std -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Impl -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\DataHandling -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_Lib\\\\InternalMux -ID:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\\\_PinMap -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.src ../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c"
+	.compiler_name		"ctc"
+	;source	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_get',code,cluster('Ifx_GlobalResources_get')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_get'
+	.align	2
+	
+	.global	Ifx_GlobalResources_get
+; Function Ifx_GlobalResources_get
+.L8:
+Ifx_GlobalResources_get:	.type	func
+	mov.a	a2,#0
+.L68:
+	j	.L2
+.L2:
+	ret
+.L47:
+	
+__Ifx_GlobalResources_get_function_end:
+	.size	Ifx_GlobalResources_get,__Ifx_GlobalResources_get_function_end-Ifx_GlobalResources_get
+.L25:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getIndex',code,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getIndex'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getIndex
+; Function Ifx_GlobalResources_getIndex
+.L10:
+Ifx_GlobalResources_getIndex:	.type	func
+	mov	d2,#-1
+.L69:
+	j	.L3
+.L3:
+	ret
+.L51:
+	
+__Ifx_GlobalResources_getIndex_function_end:
+	.size	Ifx_GlobalResources_getIndex,__Ifx_GlobalResources_getIndex_function_end-Ifx_GlobalResources_getIndex
+.L30:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getItem',code,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getItem'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getItem
+; Function Ifx_GlobalResources_getItem
+.L12:
+Ifx_GlobalResources_getItem:	.type	func
+	mov.a	a2,#0
+.L70:
+	j	.L4
+.L4:
+	ret
+.L55:
+	
+__Ifx_GlobalResources_getItem_function_end:
+	.size	Ifx_GlobalResources_getItem,__Ifx_GlobalResources_getItem_function_end-Ifx_GlobalResources_getItem
+.L35:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getName',code,cluster('Ifx_GlobalResources_getName')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_getName'
+	.align	2
+	
+	.global	Ifx_GlobalResources_getName
+; Function Ifx_GlobalResources_getName
+.L14:
+Ifx_GlobalResources_getName:	.type	func
+	movh.a	a2,#@his(.1.str)
+.L71:
+	lea	a2,[a2]@los(.1.str)
+.L93:
+	j	.L5
+.L5:
+	ret
+.L59:
+	
+__Ifx_GlobalResources_getName_function_end:
+	.size	Ifx_GlobalResources_getName,__Ifx_GlobalResources_getName_function_end-Ifx_GlobalResources_getName
+.L40:
+	; End of function
+	
+	.sdecl	'.text.Ifx_GlobalResources.Ifx_GlobalResources_init',code,cluster('Ifx_GlobalResources_init')
+	.sect	'.text.Ifx_GlobalResources.Ifx_GlobalResources_init'
+	.align	2
+	
+	.global	Ifx_GlobalResources_init
+; Function Ifx_GlobalResources_init
+.L16:
+Ifx_GlobalResources_init:	.type	func
+	mov	d2,#0
+.L72:
+	j	.L6
+.L6:
+	ret
+.L63:
+	
+__Ifx_GlobalResources_init_function_end:
+	.size	Ifx_GlobalResources_init,__Ifx_GlobalResources_init_function_end-Ifx_GlobalResources_init
+.L45:
+	; End of function
+	
+	.sdecl	'.rodata.Ifx_GlobalResources..1.str',data,rom
+	.sect	'.rodata.Ifx_GlobalResources..1.str'
+.1.str:	.type	object
+	.size	.1.str,8
+	.byte	117,110,107,110
+	.byte	111,119,110
+	.space	1
+	.calls	'Ifx_GlobalResources_get','',0
+	.calls	'Ifx_GlobalResources_getIndex','',0
+	.calls	'Ifx_GlobalResources_getItem','',0
+	.calls	'Ifx_GlobalResources_getName','',0
+	.calls	'Ifx_GlobalResources_init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L18:
+	.word	693
+	.half	3
+	.word	.L19
+	.byte	4
+.L17:
+	.byte	1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Project\\Aurix-TC275\\Timer_Test1\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L20
+	.byte	2
+	.byte	'void',0
+.L46:
+	.byte	3
+	.word	223
+.L48:
+	.byte	4
+	.byte	'long int',0,4,5,4
+	.byte	'char',0,1,6,5
+	.word	246
+	.byte	3
+	.word	254
+.L58:
+	.byte	6
+	.byte	'pchar',0,2,53,28
+	.word	259
+	.byte	7,1,55,9,8,8
+	.byte	'resource',0
+	.word	229
+	.byte	4,2,35,0,8
+	.byte	'name',0
+	.word	264
+	.byte	4,2,35,4,0,5
+	.word	278
+.L54:
+	.byte	3
+	.word	316
+	.byte	5
+	.word	246
+	.byte	3
+	.word	326
+.L62:
+	.byte	4
+	.byte	'unsigned char',0,1,8
+.L65:
+	.byte	4
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'short int',0,2,5,6
+	.byte	'__wchar_t',0,3,1,1
+	.word	374
+	.byte	4
+	.byte	'unsigned int',0,4,7,6
+	.byte	'__size_t',0,3,1,1
+	.word	405
+	.byte	4
+	.byte	'int',0,4,5,6
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	438
+	.byte	9,1,3
+	.word	465
+	.byte	6
+	.byte	'__codeptr',0,3,1,1
+	.word	467
+	.byte	6
+	.byte	'boolean',0,4,104,29
+	.word	336
+	.byte	4
+	.byte	'unsigned short int',0,2,7,6
+	.byte	'uint16',0,4,112,29
+	.word	506
+	.byte	6
+	.byte	'uint32',0,4,116,29
+	.word	353
+	.byte	6
+	.byte	'sint16',0,4,129,1,29
+	.word	374
+	.byte	6
+	.byte	'sint32',0,4,134,1,29
+	.word	234
+	.byte	4
+	.byte	'long long int',0,8,5,6
+	.byte	'sint64',0,4,141,1,29
+	.word	590
+	.byte	4
+	.byte	'float',0,4,4,6
+	.byte	'float32',0,4,170,1,29
+	.word	623
+	.byte	6
+	.byte	'pvoid',0,2,54,28
+	.word	229
+	.byte	6
+	.byte	'Ifx_GlobalResources_Item',0,1,59,3
+	.word	278
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L19:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,59,0,3,8,0,0,3,15,0,73,19,0,0,4,36,0,3,8,11,15,62,15,0
+	.byte	0,5,38,0,73,19,0,0,6,22,0,3,8,58,15,59,15,57,15,73,19,0,0,7,19,1,58,15,59,15,57,15,11,15,0,0,8,13,0,3
+	.byte	8,73,19,11,15,56,9,0,0,9,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L20:
+	.word	.L74-.L73
+.L73:
+	.half	3
+	.word	.L76-.L75
+.L75:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\Libraries\\Service\\CpuGeneric\\SysSe\\General\\Ifx_GlobalResources.h',0,0,0,0
+	.byte	'D:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0,0,0,0
+	.byte	'D:\\\\Project\\\\Aurix-TC275\\\\Timer_Test1\\\\Libraries\\\\iLLD\\\\TC27D\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0,0
+.L76:
+.L74:
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_info'
+.L21:
+	.word	321
+	.half	3
+	.word	.L22
+	.byte	4,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Project\\Aurix-TC275\\Timer_Test1\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L24,.L23
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_get',0,1,55,7
+	.word	.L46
+	.byte	1,1,1
+	.word	.L8,.L47,.L7
+	.byte	4
+	.byte	'id',0,1,55,38
+	.word	.L48,.L49
+	.byte	5
+	.word	.L8,.L47
+	.byte	6
+	.byte	'result',0,1,57,11
+	.word	.L46,.L50
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_abbrev'
+.L22:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_line'
+.L23:
+	.word	.L78-.L77
+.L77:
+	.half	3
+	.word	.L80-.L79
+.L79:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0,0,0,0,0
+.L80:
+	.byte	5,12,7,0,5,2
+	.word	.L8
+	.byte	3,198,0,1,5,5,9
+	.half	.L68-.L8
+	.byte	3,4,1,5,1,9
+	.half	.L2-.L68
+	.byte	3,1,1,7,9
+	.half	.L25-.L2
+	.byte	0,1,1
+.L78:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_ranges'
+.L24:
+	.word	-1,.L8,0,.L25-.L8,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_info'
+.L26:
+	.word	328
+	.half	3
+	.word	.L27
+	.byte	4,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Project\\Aurix-TC275\\Timer_Test1\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L29,.L28
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getIndex',0,1,79,8
+	.word	.L48
+	.byte	1,1,1
+	.word	.L10,.L51,.L9
+	.byte	4
+	.byte	'resource',0,1,79,43
+	.word	.L46,.L52
+	.byte	5
+	.word	.L10,.L51
+	.byte	6
+	.byte	'id',0,1,81,12
+	.word	.L48,.L53
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_abbrev'
+.L27:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_line'
+.L28:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0,0,0,0,0
+.L84:
+	.byte	5,15,7,0,5,2
+	.word	.L10
+	.byte	3,208,0,1,5,5,9
+	.half	.L69-.L10
+	.byte	3,18,1,5,1,9
+	.half	.L3-.L69
+	.byte	3,1,1,7,9
+	.half	.L30-.L3
+	.byte	0,1,1
+.L82:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_ranges'
+.L29:
+	.word	-1,.L10,0,.L30-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_info'
+.L31:
+	.word	325
+	.half	3
+	.word	.L32
+	.byte	4,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Project\\Aurix-TC275\\Timer_Test1\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L34,.L33
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getItem',0,1,103,33
+	.word	.L54
+	.byte	1,1,1
+	.word	.L12,.L55,.L11
+	.byte	4
+	.byte	'id',0,1,103,68
+	.word	.L48,.L56
+	.byte	5
+	.word	.L12,.L55
+	.byte	6
+	.byte	'result',0,1,105,37
+	.word	.L54,.L57
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_abbrev'
+.L32:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_line'
+.L33:
+	.word	.L86-.L85
+.L85:
+	.half	3
+	.word	.L88-.L87
+.L87:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0,0,0,0,0
+.L88:
+	.byte	5,12,7,0,5,2
+	.word	.L12
+	.byte	3,246,0,1,5,5,9
+	.half	.L70-.L12
+	.byte	3,4,1,5,1,9
+	.half	.L4-.L70
+	.byte	3,1,1,7,9
+	.half	.L35-.L4
+	.byte	0,1,1
+.L86:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_ranges'
+.L34:
+	.word	-1,.L12,0,.L35-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_info'
+.L36:
+	.word	324
+	.half	3
+	.word	.L37
+	.byte	4,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Project\\Aurix-TC275\\Timer_Test1\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L39,.L38
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_getName',0,1,127,7
+	.word	.L58
+	.byte	1,1,1
+	.word	.L14,.L59,.L13
+	.byte	4
+	.byte	'id',0,1,127,42
+	.word	.L48,.L60
+	.byte	5
+	.word	.L14,.L59
+	.byte	6
+	.byte	'name',0,1,129,1,11
+	.word	.L58,.L61
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_abbrev'
+.L37:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_line'
+.L38:
+	.word	.L90-.L89
+.L89:
+	.half	3
+	.word	.L92-.L91
+.L91:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0,0,0,0,0
+.L92:
+	.byte	5,12,7,0,5,2
+	.word	.L14
+	.byte	3,142,1,1,5,5,9
+	.half	.L93-.L14
+	.byte	3,4,1,5,1,9
+	.half	.L5-.L93
+	.byte	3,1,1,7,9
+	.half	.L40-.L5
+	.byte	0,1,1
+.L90:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_ranges'
+.L39:
+	.word	-1,.L14,0,.L40-.L14,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_info'
+.L41:
+	.word	346
+	.half	3
+	.word	.L42
+	.byte	4,1
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'D:\\Project\\Aurix-TC275\\Timer_Test1\\TriCore Debug (TASKING)\\',0,12,1
+	.word	.L44,.L43
+	.byte	2
+	.word	.L17
+	.byte	3
+	.byte	'Ifx_GlobalResources_init',0,1,151,1,9
+	.word	.L62
+	.byte	1,1,1
+	.word	.L16,.L63,.L15
+	.byte	4
+	.byte	'table',0,1,151,1,66
+	.word	.L54,.L64
+	.byte	4
+	.byte	'size',0,1,151,1,80
+	.word	.L65,.L66
+	.byte	5
+	.word	.L16,.L63
+	.byte	6
+	.byte	'result',0,1,153,1,13
+	.word	.L62,.L67
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_abbrev'
+.L42:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_line'
+.L43:
+	.word	.L95-.L94
+.L94:
+	.half	3
+	.word	.L97-.L96
+.L96:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Service/CpuGeneric/SysSe/General/Ifx_GlobalResources.c',0,0,0,0,0
+.L97:
+	.byte	5,30,7,0,5,2
+	.word	.L16
+	.byte	3,159,1,1,5,5,9
+	.half	.L72-.L16
+	.byte	3,4,1,5,1,9
+	.half	.L6-.L72
+	.byte	3,1,1,7,9
+	.half	.L45-.L6
+	.byte	0,1,1
+.L95:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_ranges'
+.L44:
+	.word	-1,.L16,0,.L45-.L16,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_loc'
+.L7:
+	.word	-1,.L8,0,.L47-.L8
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L49:
+	.word	-1,.L8,0,.L47-.L8
+	.half	1
+	.byte	84
+	.word	0,0
+.L50:
+	.word	-1,.L8,.L68-.L8,.L47-.L8
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_loc'
+.L9:
+	.word	-1,.L10,0,.L51-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L53:
+	.word	-1,.L10,.L69-.L10,.L51-.L10
+	.half	1
+	.byte	82
+	.word	0,0
+.L52:
+	.word	-1,.L10,0,.L51-.L10
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_loc'
+.L11:
+	.word	-1,.L12,0,.L55-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L56:
+	.word	-1,.L12,0,.L55-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+.L57:
+	.word	-1,.L12,.L70-.L12,.L55-.L12
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_loc'
+.L13:
+	.word	-1,.L14,0,.L59-.L14
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L60:
+	.word	-1,.L14,0,.L59-.L14
+	.half	1
+	.byte	84
+	.word	0,0
+.L61:
+	.word	-1,.L14,.L71-.L14,.L59-.L14
+	.half	1
+	.byte	98
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_loc'
+.L15:
+	.word	-1,.L16,0,.L63-.L16
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L67:
+	.word	-1,.L16,.L72-.L16,.L63-.L16
+	.half	1
+	.byte	82
+	.word	0,0
+.L66:
+	.word	-1,.L16,0,.L63-.L16
+	.half	1
+	.byte	84
+	.word	0,0
+.L64:
+	.word	-1,.L16,0,.L63-.L16
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L98:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_get')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L8,.L47-.L8
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getIndex')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L10,.L51-.L10
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getItem')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L12,.L55-.L12
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_getName')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L14,.L59-.L14
+	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_GlobalResources_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L98,.L16,.L63-.L16
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	; Module end
