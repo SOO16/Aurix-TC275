@@ -1,0 +1,18 @@
+16:08:42 **** Incremental Build of configuration TriCore Debug (TASKING) for project Timer_Test2 ****
+amk -j8 all 
+TASKING VX-toolset for AURIX Development Studio (non-commercial): program builder v1.1r8 Build 22011964
+Building target: Timer_Test2.elf
+Invoking: TASKING Linker
+cctc -f .Timer_Test2.elf.opt
+Finished building target: Timer_Test2.elf
+ 
+Invoking: Print Size
+elfsize  "Timer_Test2.elf"
+Total sizes:
+ROM: 0x2543 (9539) = code: 0x2396 (9110) + romdata: 0x1ad (429)
+RAM: 0x9519 (38169) = data + bss
+Finished building: Timer_Test2.siz
+ 
+
+16:08:42 Build Finished. 0 errors, 0 warnings. (took 583ms)
+

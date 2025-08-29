@@ -32,21 +32,33 @@
 #include "Ifx_Types.h"
 #include "IfxGpt12.h"
 #include "IfxPort.h"
+#include "Bsp.h"
 
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
-#define ISR_PRIORITY_GPT12_TIMER    6                       /* Define the GPT12 Timer interrupt priority            */
+#define ISR_PRIORITY_GPT12_TIMER2   5                       /* Define the GPT12 Timer interrupt priority            */
+#define ISR_PRIORITY_GPT12_TIMER3   6                       /* Define the GPT12 Timer interrupt priority            */
 #define ISR_PROVIDER_GPT12_TIMER    IfxSrc_Tos_cpu0         /* Interrupt provider                                   */
-#define RELOAD_VALUE                48828u                  /* Reload value to have an interrupt each 500ms         */
+#define RELOAD_VALUE                48828u                /* Reload value to have an interrupt each 100ms         */
+//#define RELOAD_VALUE                9767u                   /* Reload value to have an interrupt each 100ms         */
+#define RELOAD_VALUE_T2             10u                   /* Reload value to have an interrupt each 100ms         */
+//#define RELOAD_VALUE_T3             19563u                  /* Reload value to have an interrupt each 200ms         */
+#define RELOAD_VALUE_T3             9767u                   /* Reload value to have an interrupt each 100ms         */
+
 #define LED                         &MODULE_P00, 5          /* LED which toggles in the Interrupt Service Routine   */
+#define TEST_PIN_T2                 &MODULE_P00, 0
+#define TEST_PIN_T3                 &MODULE_P00, 2
+#define WAIT_TIME                   1
 
 /*********************************************************************************************************************/
 /*--------------------------------------------Function Implementations-----------------------------------------------*/
 /*********************************************************************************************************************/
 /* Macro defining the Interrupt Service Routine */
-IFX_INTERRUPT(interruptGpt12, 0, ISR_PRIORITY_GPT12_TIMER);
+IFX_INTERRUPT(interruptGpt12_T2, 0, ISR_PRIORITY_GPT12_TIMER2);
+IFX_INTERRUPT(interruptGpt12_T3, 0, ISR_PRIORITY_GPT12_TIMER3);
 
+uint8 t3_cnt = 0;
 /* Function to initialize the GPT12 and start the timer */
 void initGpt12Timer(void)
 {
@@ -54,30 +66,73 @@ void initGpt12Timer(void)
     IfxGpt12_enableModule(&MODULE_GPT120);                                          /* Enable the GPT12 module      */
     IfxGpt12_setGpt1BlockPrescaler(&MODULE_GPT120, IfxGpt12_Gpt1BlockPrescaler_16); /* Set GPT1 block prescaler     */
 
+    /* Initialize the Timer T2 */
+    IfxGpt12_T2_setMode(&MODULE_GPT120, IfxGpt12_Mode_reload);                       /* Set T2 to reload mode         */
+    IfxGpt12_T2_setTimerDirection(&MODULE_GPT120, IfxGpt12_TimerDirection_down);    /* Set T2 count direction       */
+    IfxGpt12_T2_setTimerPrescaler(&MODULE_GPT120, IfxGpt12_TimerInputPrescaler_64); /* Set T2 input prescaler       */
+    IfxGpt12_T2_setTimerValue(&MODULE_GPT120, RELOAD_VALUE_T2);                        /* Set T2 start value           */
+
     /* Initialize the Timer T3 */
     IfxGpt12_T3_setMode(&MODULE_GPT120, IfxGpt12_Mode_timer);                       /* Set T3 to timer mode         */
     IfxGpt12_T3_setTimerDirection(&MODULE_GPT120, IfxGpt12_TimerDirection_down);    /* Set T3 count direction       */
     IfxGpt12_T3_setTimerPrescaler(&MODULE_GPT120, IfxGpt12_TimerInputPrescaler_64); /* Set T3 input prescaler       */
-    IfxGpt12_T3_setTimerValue(&MODULE_GPT120, RELOAD_VALUE);                        /* Set T3 start value           */
+    IfxGpt12_T3_setTimerValue(&MODULE_GPT120, RELOAD_VALUE_T3);                        /* Set T3 start value           */
 
-    /* Initialize the Timer T2 */
-    IfxGpt12_T2_setMode(&MODULE_GPT120, IfxGpt12_Mode_reload);                      /* Set T2 to reload mode        */
-    IfxGpt12_T2_setReloadInputMode(&MODULE_GPT120, IfxGpt12_ReloadInputMode_bothEdgesTxOTL); /* Set reload trigger  */
-    IfxGpt12_T2_setTimerValue(&MODULE_GPT120, RELOAD_VALUE);                        /* Set T2 reload value          */
+    /* Initialize T2 interrupt */
+    volatile Ifx_SRC_SRCR *srcT2 = IfxGpt12_T2_getSrc(&MODULE_GPT120);                /* Get the interrupt address    */
+    IfxSrc_init(srcT2, ISR_PROVIDER_GPT12_TIMER, ISR_PRIORITY_GPT12_TIMER2);           /* Initialize service request   */
+    IfxSrc_enable(srcT2);
 
-    /* Initialize the interrupt */
-    volatile Ifx_SRC_SRCR *src = IfxGpt12_T3_getSrc(&MODULE_GPT120);                /* Get the interrupt address    */
-    IfxSrc_init(src, ISR_PROVIDER_GPT12_TIMER, ISR_PRIORITY_GPT12_TIMER);           /* Initialize service request   */
-    IfxSrc_enable(src);                                                             /* Enable GPT12 interrupt       */
+    /* Initialize T3 interrupt */
+    volatile Ifx_SRC_SRCR *srcT3 = IfxGpt12_T3_getSrc(&MODULE_GPT120);                /* Get the interrupt address    */
+    IfxSrc_init(srcT3, ISR_PROVIDER_GPT12_TIMER, ISR_PRIORITY_GPT12_TIMER3);           /* Initialize service request   */
+    IfxSrc_enable(srcT3);                                                             /* Enable GPT12 interrupt       */
 
     /* Initialize the LED */
     IfxPort_setPinModeOutput(LED, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
+    IfxPort_setPinModeOutput(TEST_PIN_T2, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
+    IfxPort_setPinModeOutput(TEST_PIN_T3, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
 
+    IfxGpt12_T2_run(&MODULE_GPT120, IfxGpt12_TimerRun_start);                       /* Start the timer              */
     IfxGpt12_T3_run(&MODULE_GPT120, IfxGpt12_TimerRun_start);                       /* Start the timer              */
 }
 
-/* Interrupt Service Routine of the GPT12 */
-void interruptGpt12(void)
+void init_Port(void)
 {
-    IfxPort_togglePin(LED);                                                         /* Toggle LED state             */
+    /* Initialization of the LED used in this example */
+    IfxPort_setPinModeOutput(TEST_PIN_T2, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
+    IfxPort_setPinModeOutput(TEST_PIN_T3, IfxPort_OutputMode_pushPull, IfxPort_OutputIdx_general);
+
+    /* Setup the port pin connected to the LED to general output mode push-pull. This function can be used
+     * to initialize any port pin by specifying the port number, pin number and port pin mode.
+     */
+    IfxPort_setPinLow(TEST_PIN_T2);
+    IfxPort_setPinLow(TEST_PIN_T3);
 }
+
+/* Interrupt Service Routine of the GPT12 */
+void interruptGpt12_T2(void)
+{
+    //IfxGpt12_T3_setTimerValue(&MODULE_GPT120, RELOAD_VALUE/10);                        /* Set T3 start value           */
+    //IfxPort_togglePin(LED1);                                                         /* Toggle LED state             */
+    //IfxPort_togglePin(TEST_PIN1);                                                    /* Toggle LED state             */
+    //IfxPort_setPinLow(TEST_PIN_T2);
+    IfxPort_setPinHigh(TEST_PIN_T2);
+
+    waitTime(IfxStm_getTicksFromMilliseconds(BSP_DEFAULT_TIMER, WAIT_TIME));      // 1msec 지연 루틴
+    IfxPort_setPinLow(TEST_PIN_T2);
+}
+
+/* Interrupt Service Routine of the GPT12 */
+void interruptGpt12_T3(void)
+{
+    //IfxPort_setPinHigh(TEST_PIN_T3);
+    //IfxPort_setPinLow(TEST_PIN_T3);
+    IfxPort_setPinHigh(TEST_PIN_T3);
+    IfxGpt12_T3_setTimerValue(&MODULE_GPT120, RELOAD_VALUE_T3);                        /* Set T3 start value           */
+
+    waitTime(IfxStm_getTicksFromMilliseconds(BSP_DEFAULT_TIMER, WAIT_TIME));      // 1msec 지연 루틴
+    IfxPort_setPinLow(TEST_PIN_T3);
+    //IfxPort_setPinHigh(TEST_PIN_T3);
+}
+
